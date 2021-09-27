@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -5,16 +8,31 @@ body{
     background: url(picture-1\ \(2\).jpg);
     background-size: cover;
 }
-.box{
-    display: none;
-    width: 300px;
-    padding: 30px;
+.navBar {
+    height: 55px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 50px;
+}
+.login-btn, .signup-btn {
+    height: 70%;
+    width: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.login-box{
+    width: auto;
+    padding: 10px 30px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
     align-items: center;
+    border-radius: 2%;
 }
  .h1{
     color: white;
@@ -24,7 +42,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.box input[type="text"], .box input[type="password"]
+.login-box input[type="text"], .login-box input[type="password"]
 {
     border: 0;
     background: none;
@@ -40,12 +58,12 @@ body{
     transition: 0.25px;;
     
 }
-.box input[type="text"]:focus, .box input[type="password"]:focus{
+.login-box input[type="text"]:focus, .box input[type="password"]:focus{
 
     width: 270px;
     border-color: #ffc400ec;
 }
-.box input[type="submit"]{
+.login-box input[type="submit"]{
     
     border: 0;
     background: none;
@@ -62,18 +80,26 @@ body{
     cursor: pointer;
 
 }
-.box input[type="submit"]:hover{
+.login-box input[type="submit"]:hover{
     background-color: blue;
 }
+.err-msg {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
 .signup-box {
-    width: 300px;
-    padding: 30px;
+    display: none;
+    width: auto;
+    padding: 0 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
     align-items: center;
+    border-radius: 2%;
 }
  .h1{
     color: white;

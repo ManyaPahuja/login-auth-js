@@ -9,25 +9,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- <form class="login-box" id="login-box" action="index.html" method="POST">
+    <div class="navBar">
+        <button id="login-btn" class="login-btn" onclick="handleBtn('login')">Login</button>
+        <button id="signup-btn" class="signup-btn" onclick="handleBtn('signup')">Signup</button>
+    </div>
+    <form class="login-box" id="login-box" onsubmit="handleForm('login')">
         <h1 class="h1">Login </h1>
-        <input type="text" placeholder="Enter Username" id="user name">
-        <input type="password" placeholder="Enter password" id="password">
+        <input type="text" placeholder="Enter Username" id="login-username" required>
+        <input type="password" placeholder="Enter password" id="password" required>
+        <div class="err-msg" id="login-err-msg"></div>
         <input type="submit" value="Login">
         
-    </form> -->
-    <form class="signup-box" id="signup-box" action="index.html" method="POST">
+    </form>
+    <form class="signup-box" id="signup-box">
         <h1 class="h1">Sign-up</h1>
         <input type="text" placeholder="Enter Username" id="username" required/>
         <input type="text" placeholder="Enter Mobile Number" id="mobile" required/>
         <input type="text" placeholder="Enter Email" id="email" required />
-        <input type="text" placeholder="Create password" id="create-pwd" required />
-        <input type="text" placeholder="Confirm password" id="confirm-pwd" required />
-        <div class=""></div>
-        <input type="submit" value="Sign up">
-        
+        <input type="password" placeholder="Create password" id="create-pwd" required />
+        <input type="password" placeholder="Confirm password" id="confirm-pwd" required />
+        <div class="err-msg" id="signup-err-msg"></div>
+        <input type="submit" value="Sign up" onclick="handleForm('signup')">
     </form>
-
 </body>
 
 <script src="index.js" ></script>
