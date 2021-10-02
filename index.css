@@ -80,9 +80,11 @@ body{
     cursor: pointer;
 
 }
+
 .login-box input[type="submit"]:hover{
     background-color: blue;
 }
+
 .err-msg {
     height: auto;
     width: 100%;

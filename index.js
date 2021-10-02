@@ -61,4 +61,5 @@ function handleForm(type) {
         document.getElementById("login-err-msg").style.color = "green"
         document.getElementById("login-err-msg").innerText = "Login successful."
     }
+    return false
 }
