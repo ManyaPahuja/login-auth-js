@@ -23,7 +23,7 @@ function handleForm(type) {
 
         if (pwd !== cnfPwd) {
             document.getElementById("signup-err-msg").style.color = "red"
-            document.getElementById("err-msg").innerText = "Passwords doesn't match"
+            document.getElementById("signup-err-msg").innerText = "Passwords doesn't match"
             return
         }
 
